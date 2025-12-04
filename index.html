@@ -69,17 +69,17 @@
     <section id="portfolio" class="fade-in">
         <h2>My Portfolio</h2>
         <div class="projects">
-            <div class="project" onclick="openModal('Burger Poster Design', 'A vibrant poster design promoting a delicious burger, emphasizing bold colors and appetizing visuals to attract food enthusiasts.', 'burger.jpg')">
+            <div class="project">
                 <h3>Burger Poster</h3>
-                <img src="burger.jpg" alt="Burger Poster Design">
+                <img src="burger.jpg" alt="Burger Poster Design" onclick="window.open('burger.jpg', '_blank')">
             </div>
-            <div class="project" onclick="openModal('Project 25 Poster', 'An innovative poster design for Project 25, showcasing creative typography and dynamic layouts to convey a modern message.', 'PROJECT 25.jpg')">
+            <div class="project">
                 <h3>Project 25</h3>
-                <img src="PROJECT 25.jpg" alt="Project 25 Poster Design">
+                <img src="PROJECT 25.jpg" alt="Project 25 Poster Design" onclick="window.open('PROJECT 25.jpg', '_blank')">
             </div>
-            <div class="project" onclick="openModal('Shoe Poster Design', 'A stylish poster design for shoes, highlighting elegance and comfort through sleek graphics and compelling imagery.', 'sepatu.jpg')">
+            <div class="project">
                 <h3>Shoe Poster</h3>
-                <img src="sepatu.jpg" alt="Shoe Poster Design">
+                <img src="sepatu.jpg" alt="Shoe Poster Design" onclick="window.open('sepatu.jpg', '_blank')">
             </div>
         </div>
     </section>
@@ -102,7 +102,7 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2 id="modal-title"></h2>
-            <img id="modal-image" src="" alt="Project Image" style="max-width: 100%; height: auto; margin: 10px 0;">
+            <img id="modal-image" src="" alt="Project Image" style="max-width: 90%; height: auto; margin: 10px 0; cursor: pointer;">
             <p id="modal-description"></p>
         </div>
     </div>
