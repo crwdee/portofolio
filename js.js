@@ -35,9 +35,12 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
 // Modal
-function openModal(title, description) {
+function openModal(title, description, image) {
     document.getElementById('modal-title').textContent = title;
     document.getElementById('modal-description').textContent = description;
+    const modalImage = document.getElementById('modal-image');
+    modalImage.src = image;
+    modalImage.onclick = () => window.open(image, '_blank');
     document.getElementById('modal').style.display = 'block';
 }
 
