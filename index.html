@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Ade Maulana Syaputra, a graphic design enthusiast specializing in poster design. Explore creative projects and get in touch.">
     <title>DE_Design Portfolio</title>
     <link rel="stylesheet" href="css.css">
 </head>
@@ -26,34 +27,36 @@
     </header>
 
     <section id="home" class="fade-in">
-        <h1>Welcome to De_Design Portfolio</h1>
+        <h1>Welcome to DE_Design Portfolio</h1>
         <p>Showcasing creative designs and innovative ideas</p>
     </section>
 
     <section id="about" class="fade-in">
         <h2>About Me</h2>
-        <img src="de.jpg" alt="Profile Image" class="profile-img">
-        <p>My name is Ade Maulana Syaputra, a university student with a strong interest in graphic design, especially poster design. I enjoy creating visual work that is modern, communicative, and aesthetically appealing. My passion for design motivates me to keep learning and exploring various creative techniques through academic projects and personal work.</p>
-        <p>My education background </p>
-        <p>-Elementary School in SDN CIMUNING 02 BEKASI</p>
-        <P>-Junior High School in MTSN 1 SETU BEKASI 02</P>
-        <P>-Vocational High School in SMK YATINDO</P>
+        <img src="de.jpg" alt="Profile Image of Ade Maulana Syaputra" class="profile-img">
+        <p>My name is Ade Maulana Syaputra, a university student with a strong passion for graphic design, particularly poster design. I enjoy crafting visual works that are modern, communicative, and aesthetically pleasing. My enthusiasm for design drives me to continuously learn and experiment with various creative techniques through academic projects and personal endeavors.</p>
+        <h3>Education Background</h3>
+        <ul>
+            <li>Elementary School: SDN Cimuning 02 Bekasi</li>
+            <li>Junior High School: MTsN 1 Setu Bekasi 02</li>
+            <li>Vocational High School: SMK Yatindo</li>
+        </ul>
     </section>
 
     <section id="portfolio" class="fade-in">
         <h2>My Portfolio</h2>
         <div class="projects">
-            <div class="project" onclick="openModal('Project 1', 'This is poster design 1.')">
-                <h3>Project 1</h3>
-                <img src="burger.jpg" alt="Project 1">
+            <div class="project" onclick="openModal('Burger Poster Design', 'A vibrant poster design promoting a delicious burger, emphasizing bold colors and appetizing visuals to attract food enthusiasts.', 'burger.jpg')">
+                <h3>Burger Poster</h3>
+                <img src="burger.jpg" alt="Burger Poster Design">
             </div>
-            <div class="project" onclick="openModal('Project 2', 'This is poster design 2.')">
-                <h3>Project 2</h3>
-                <img src="PROJECT 25.jpg" alt="Project 2">
+            <div class="project" onclick="openModal('Project 25 Poster', 'An innovative poster design for Project 25, showcasing creative typography and dynamic layouts to convey a modern message.', 'PROJECT 25.jpg')">
+                <h3>Project 25</h3>
+                <img src="PROJECT 25.jpg" alt="Project 25 Poster Design">
             </div>
-            <div class="project" onclick="openModal('Project 3', 'This is poster design 3.')">
-                <h3>Project 3</h3>
-                <img src="sepatu.jpg" alt="Project 3">
+            <div class="project" onclick="openModal('Shoe Poster Design', 'A stylish poster design for shoes, highlighting elegance and comfort through sleek graphics and compelling imagery.', 'sepatu.jpg')">
+                <h3>Shoe Poster</h3>
+                <img src="sepatu.jpg" alt="Shoe Poster Design">
             </div>
         </div>
     </section>
@@ -69,13 +72,14 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 De_Design .</p>
+        <p>&copy; 2025 DE_Design. All rights reserved.</p>
     </footer>
 
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Project Image" style="max-width: 100%; height: auto; margin: 10px 0;">
             <p id="modal-description"></p>
         </div>
     </div>
