@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DE_Design Portfolio</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DE_DESIGN</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">🌙</button>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="fade-in">
+        <h1>Welcome to De_Design Portfolio</h1>
+        <p>Showcasing creative designs and innovative ideas</p>
+    </section>
+
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <img src="/img/de.jpg" alt="Profile Image" class="profile-img">
+        <p>My name is Ade Maulana Syaputra, a university student with a strong interest in graphic design, especially poster design. I enjoy creating visual work that is modern, communicative, and aesthetically appealing. My passion for design motivates me to keep learning and exploring various creative techniques through academic projects and personal work.</p>
+    </section>
+
+    <section id="portfolio" class="fade-in">
+        <h2>My Portfolio</h2>
+        <div class="projects">
+            <div class="project" onclick="openModal('Project 1', 'This is poster design 1.')">
+                <h3>Project 1</h3>
+                <img src="/img/burger.jpg" alt="Project 1">
+            </div>
+            <div class="project" onclick="openModal('Project 2', 'This is poster design 2.')">
+                <h3>Project 2</h3>
+                <img src="/img/PROJECT 25.jpg" alt="Project 2">
+            </div>
+            <div class="project" onclick="openModal('Project 3', 'This is poster design 3.')">
+                <h3>Project 3</h3>
+                <img src="/img/sepatu.jpg" alt="Project 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 De_Design .</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
