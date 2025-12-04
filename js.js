@@ -4,6 +4,11 @@ toggle.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
     toggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
 });
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
 
 // ---------- BURGER MENU ----------
 const burger = document.querySelector(".burger");
@@ -38,3 +43,4 @@ document.querySelectorAll("a[href^='#']").forEach(link => {
         });
     });
 });
+
