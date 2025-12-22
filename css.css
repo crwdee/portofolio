@@ -13,7 +13,7 @@
     left: 0;
     width: 0%;
     height: 5px;
-    background: linear-gradient(90deg, #ff4757, #ff6348);
+    background: linear-gradient(90deg, #004cee, #f80404);
     z-index: 1000;
     transition: width 0.3s ease;
 }
@@ -32,7 +32,7 @@ body {
 /* ---------- NAVBAR ---------- */
 header {
     width: 100%;
-    background: white;
+    background: rgb(255, 255, 255);
     position: fixed;
     top: 0;
     left: 0;
@@ -102,7 +102,7 @@ section {
 
 #home {
     text-align: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #004cee 0%, #f80404 100%);
     color: white;
     min-height: 100vh;
     display: flex;
@@ -150,7 +150,7 @@ section {
 }
 
 .skill-fill {
-    background: linear-gradient(90deg, #ff4757, #ff6348);
+    background: linear-gradient(90deg, #004cee, #f80404);
     height: 100%;
     border-radius: 10px;
     transition: width 2s ease;
@@ -255,7 +255,7 @@ input, textarea {
 button {
     padding: 12px;
     border: none;
-    background: #ff4757;
+    background: #c10000;
     color: white;
     border-radius: 10px;
     cursor: pointer;
